@@ -1,4 +1,5 @@
 class PayTypesController < ApplicationController
+  skip_before_action :authorize
   before_action :set_pay_type, only: [:show, :edit, :update, :destroy]
 
   # GET /pay_types
